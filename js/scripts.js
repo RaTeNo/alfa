@@ -130,7 +130,7 @@ $(() => {
 
 
 	// Галерея картинок
-	if ($('.gallery').length) {
+	/*if ($('.gallery').length) {
 		rowGrid(document.getElementsByClassName('gallery')[0], {
 			itemSelector: '.item',
 			minMargin: 10,
@@ -151,7 +151,8 @@ $(() => {
 			maxMargin: 20,
 			minWidth: 134
 		})
-	}
+	}	*/
+	
 })
 
 
