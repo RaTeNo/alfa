@@ -4345,3 +4345,27 @@ footer .privacy_ploicy a:hover
 
     text-align: left;
 }
+
+
+.icon_mail{
+position: absolute;
+    background-color: red;
+    padding: 4px;
+    width: auto;
+    border-radius: 50%;
+    right: -8px;
+    top: -8px;
+    height: auto;
+}
+
+.icon_mail svg{
+    width: 15px;
+    height: 15px;
+    fill: white;
+    display: block;
+}
+
+header .btn {
+    margin-left: 20px;
+    position: relative;
+}
