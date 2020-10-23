@@ -128,6 +128,10 @@ $(() => {
 		})
 	}
 
+	$(".disabled").click(function (e) {
+		e.preventDefault()
+	});
+
 
 	// Галерея картинок
 	/*if ($('.gallery').length) {

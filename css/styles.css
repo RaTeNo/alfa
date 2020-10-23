@@ -4369,3 +4369,21 @@ header .btn {
     margin-left: 20px;
     position: relative;
 }
+
+.companies table td.action a.disabled{
+    color: #cecece;
+    border-color: #dde2e8;
+}
+
+.companies table td.action a.disabled:hover{
+    color: #cecece;
+    border-color: #dde2e8 !important;
+    background: #fff !important;
+}
+
+.balance_replenishment .form .field > input::-webkit-outer-spin-button,
+.balance_replenishment .form .field > input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
