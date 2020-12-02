@@ -692,6 +692,7 @@ button
 {
     color: #4077ff;
     font-weight: 700;
+        overflow-wrap: break-word;
 }
 
 .block_data table td a:hover
