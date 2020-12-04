@@ -2963,6 +2963,22 @@ header .btn
     box-shadow: 0 0 0 rgba(90, 113, 208, .107337);
 }
 
+.company_info .ad_preview .example4 .link{
+    background: #498CE7;
+    width: calc(100% + 42px);
+    display: block;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: -21px;
+    padding: 20px;
+    text-decoration: none;
+    position: relative;
+    top: -39px;
+    justify-content: space-between;
+}
+
 .company_info .ad_preview .example4 .author
 {
     display: flex;
