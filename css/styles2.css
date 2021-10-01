@@ -79,8 +79,11 @@
 
 @media (max-width: 479px) {
 
-    .companies.event {
+    .companies.event tr {
         font-family: "Gilroy";
+        box-shadow: 0 3px 31px rgba(148, 155, 195, 0.15);
+        border-radius: 20px;
+        background-color: #ffffff;
     }
     .companies table td:before {
         font-family: "Gilroy";
@@ -88,6 +91,7 @@
     }
     .companies.event table tr {
         background: #fff;
+        margin-top: 30px;
     }
     .companies.event table td {
         border-bottom: none;
@@ -99,8 +103,9 @@
         padding: 6px 12px;
         border-radius: 16px;
         background-color: #ebedf9;
-        margin-top: 9px;
+        margin-top: 7px;
         display: inline-block;
+        font-family: "Gilroy";
     }
     .companies.event table td.service {
         width: 100%;
@@ -134,7 +139,7 @@
         width: 100%;
         padding: 33px 39px;  
         border-radius: 16px;  
-        margin-top: 35px;    
+        margin: 45px 20px 20px;
     }
     .companies.event table td.action_mob span a {
         text-decoration: none;
@@ -192,5 +197,22 @@
         content: attr(data-column);
         text-align: left;
         white-space: nowrap;
+    }
+    .companies.event table td.service span {
+        padding: 3px 12px 3px 0;
+    }
+    .companies.event table td {
+        padding: 36px 20px 0;
+    }
+    .block.events .block_data {
+        padding: 30px;
+        border: none;
+        border-radius: 0px;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .block.events .block_data > .head {
+        margin-bottom: 0;
     }
 } 
