@@ -32,7 +32,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/chartist.css">
 		<link rel="stylesheet" href="css/styles.css">
-
+		<link rel="stylesheet" href="css/styles2.css">
 		<link rel="stylesheet" href="css/response_1119.css" media="(max-width: 1119px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
 		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
@@ -97,360 +97,125 @@
 				</header>
 
 
-				<section class="stats block">
-					<div class="cont">
-
-						<div class="row">
-							<div class="item">
-								<div class="val">152</div>
-								<div class="name">Событий сегодня</div>
-
-								<div class="icon icon1">
-									<svg><use xlink:href="images/sprite.svg#ic_notice"></use></svg>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="val">15</div>
-								<div class="name">Работает компаний</div>
-
-								<div class="icon icon2">
-									<svg><use xlink:href="images/sprite.svg#ic_companies"></use></svg>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="val">1,292</div>
-								<div class="name">Потрачено сегодня</div>
-
-								<div class="icon icon3">
-									<svg><use xlink:href="images/sprite.svg#ic_money"></use></svg>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</section>
-
-
 				<section class="block">
 					<div class="cont">
 
 						<div class="block_data">
 							<div class="head">
-								<div class="block_title">Ваши компании</div>
-
-								<button class="add_btn btn circle modal_link" data-content="#add_company_modal">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
-								</button>
-
-								<div class="mob_sep"></div>
-
-								<button class="refresh_btn btn">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_refresh"></use></svg>
-									<span>Обновить</span>
-								</button>
-
-								<div class="sort">
-									<select name="">
-										<option value="0">Показать все</option>
-										<option value="1">Вариант 1</option>
-										<option value="2">Вариант 2</option>
-										<option value="3">Вариант 3</option>
-									</select>
-								</div>
+								<div class="block_title">События</div>
 							</div>
 
 
-							<div class="companies">
+							<div class="companies event">
 								<table>
 									<thead>
 										<tr>
 											<th>Сервис</th>
-											<th>Добавлено</th>
-											<th>Статус</th>
-											<th>Название</th>
-											<th class="aligncenter">Потрачено<br> сегодня</th>
-											<th class="aligncenter">Дневной<br> лимит</th>
-											<th class="aligncenter">Подробнее</th>
+											<th class="aligncenter">Дата и время</th>
+											<th class="aligncenter">Цена</th>
+											<th class="aligncenter">Телефон/Логин</th>
+											<th class="aligncenter">Скриншот подтверждения</th>
 										</tr>
 									</thead>
 
 									<tbody>
 										<tr>
-											<td class="service" data-column="Сервис">
-												<img data-src="images/service_logo_vk.svg" alt="" class="lozad">
-												<span>Вконтакте</span>
+											<td class="service" data-column="Сервис:">
+												
+												<span>
+													<img data-src="images/event_check.svg" alt="" class="lozad">
+													Оплата за лиды
+												</span>
 											</td>
 
-											<td class="date" data-column="Добавлено">24.09.2020</td>
-
-											<td class="status aligncenter" data-column="Статус">
-												<img data-src="images/ic_status_work.svg" alt="" class="lozad" title="Работает">
-												<span>Работает</span>
+											<td class="date aligncenter" data-column="Дата и время:">
+												<span>24.09.2020 19:15</span>
 											</td>
 
-											<td class="name" data-column="Название">Пробуем рекрутинг на магазине в Реутове</td>
+											<td class="status aligncenter" data-column="Цена:">
+												<span>43 ₽</span>	
+											</td>
 
-											<td class="price aligncenter" data-column="Потрачено сегодня">999 999 999 ₽</td>
-
-											<td class="price_limit aligncenter" data-column="Дневной лимит">
-												<span>999 999 999 ₽</span>
+											<td class="name aligncenter" data-column="Телефон/Логин:">
+												<span>+7 (873) 134-12-45</span>
 											</td>
 
 											<td class="action aligncenter">
-												<a href="/">Открыть</a>
+												<span><a href="/" class="modal_link" data-content="#callback_modal" >Показать скриншот</a></span> 
+											</td>
+
+											<td class="action_mob aligncenter"  data-column="Скриншот:" style="display: none;">
+												<span><a href="/" class="modal_link" data-content="#callback_modal" >Показать скриншот</a></span>
 											</td>
 										</tr>
 
 										<tr>
-											<td class="service" data-column="Сервис">
-												<img data-src="images/service_logo_insta.svg" alt="" class="lozad">
-												<span>Instagram</span>
+											<td class="service" data-column="Сервис:">
+												
+												<span>
+													<img data-src="images/event_check.svg" alt="" class="lozad">
+													Оплата за лиды
+												</span>
 											</td>
 
-											<td class="date" data-column="Добавлено">24.09.2020</td>
-
-											<td class="status aligncenter" data-column="Статус">
-												<img data-src="images/ic_status_pause.svg" alt="" class="lozad" title="На паузе">
-												<span>На паузе</span>
+											<td class="date aligncenter" data-column="Дата и время:">
+												<span>24.09.2020 19:15</span>
 											</td>
 
-											<td class="name" data-column="Название">Пробуем рекрутинг на магазине в Реутове<br> Еще одна строка для текста</td>
+											<td class="status aligncenter" data-column="Цена:">
+												<span>43 ₽</span>	
+											</td>
 
-											<td class="price aligncenter" data-column="Потрачено сегодня">999 999 999 ₽</td>
-
-											<td class="price_limit aligncenter" data-column="Дневной лимит">
-												<span>999 999 999 ₽</span>
+											<td class="name aligncenter" data-column="Телефон/Логин:">
+												<span>+7 (873) 134-12-45</span>
 											</td>
 
 											<td class="action aligncenter">
-												<a href="/">Открыть</a>
+												<span><a href="/" class="modal_link" data-content="#callback_modal" >Показать скриншот</a></span> 
+											</td>
+
+											<td class="action_mob aligncenter"  data-column="Скриншот:" style="display: none;">
+												<span><a href="/" class="modal_link" data-content="#callback_modal" >Показать скриншот</a></span>
 											</td>
 										</tr>
 
 										<tr>
-											<td class="service" data-column="Сервис">
-												<img data-src="images/service_logo_google.svg" alt="" class="lozad">
-												<span>Google</span>
+											<td class="service" data-column="Сервис:">
+												
+												<span>
+													<img data-src="images/event_check.svg" alt="" class="lozad">
+													Оплата за лиды
+												</span>
 											</td>
 
-											<td class="date" data-column="Добавлено">24.09.2020</td>
-
-											<td class="status aligncenter" data-column="Статус">
-												<img data-src="images/ic_status_moderation.svg" alt="" class="lozad" title="На модерации">
-												<span>На модерации</span>
+											<td class="date aligncenter" data-column="Дата и время:">
+												<span>24.09.2020 19:15</span>
 											</td>
 
-											<td class="name" data-column="Название">Пробуем рекрутинг на магазине в Реутове</td>
-
-											<td class="price aligncenter" data-column="Потрачено сегодня">999 999 999 ₽</td>
-
-											<td class="price_limit aligncenter" data-column="Дневной лимит">
-												<span>999 999 999 ₽</span>
+											<td class="status aligncenter" data-column="Цена:">
+												<span>43 ₽</span>	
 											</td>
 
-											<td class="action aligncenter">
-												<a href="/">Открыть</a>
-											</td>
-										</tr>
-
-										<tr>
-											<td class="service" data-column="Сервис">
-												<img data-src="images/service_logo_yandex.svg" alt="" class="lozad">
-												<span>Яндекс</span>
-											</td>
-
-											<td class="date" data-column="Добавлено">24.09.2020</td>
-
-											<td class="status aligncenter" data-column="Статус">
-												<img data-src="images/ic_status_stopped.svg" alt="" class="lozad" title="Остановлено">
-												<span>Остановлено</span>
-											</td>
-
-											<td class="name" data-column="Название">Пробуем рекрутинг на магазине в Реутове</td>
-
-											<td class="price aligncenter" data-column="Потрачено сегодня">999 999 999 ₽</td>
-
-											<td class="price_limit aligncenter" data-column="Дневной лимит">
-												<span>999 999 999 ₽</span>
+											<td class="name aligncenter" data-column="Телефон/Логин:">
+												<span>+7 (873) 134-12-45</span>
 											</td>
 
 											<td class="action aligncenter">
-												<a href="/">Открыть</a>
+												<span><a href="/" class="modal_link" data-content="#callback_modal" >Показать скриншот</a></span> 
+											</td>
+
+											<td class="action_mob aligncenter"  data-column="Скриншот:" style="display: none;">
+												<span><a href="/" class="modal_link" data-content="#callback_modal" >Показать скриншот</a></span>
 											</td>
 										</tr>
 
-										<tr>
-											<td class="service" data-column="Сервис">
-												<img data-src="images/service_logo_fb.svg" alt="" class="lozad">
-												<span>Facebook</span>
-											</td>
-
-											<td class="date" data-column="Добавлено">24.09.2020</td>
-
-											<td class="status aligncenter" data-column="Статус">
-												<img data-src="images/ic_status_no_money.svg" alt="" class="lozad" title="Недостаточно средств">
-												<span>Недостаточно средств</span>
-											</td>
-
-											<td class="name" data-column="Название">Пробуем рекрутинг на магазине в Реутове</td>
-
-											<td class="price aligncenter" data-column="Потрачено сегодня">999 999 999 ₽</td>
-
-											<td class="price_limit aligncenter" data-column="Дневной лимит">
-												<span>999 999 999 ₽</span>
-											</td>
-
-											<td class="action aligncenter">
-												<a href="/" class="disabled">Открыть</a>
-											</td>
-										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
-
 					</div>
 				</section>
-
-
-				<section class="block">
-					<div class="cont">
-
-						<div class="block_data tabs_container">
-							<div class="head">
-								<div class="block_title">Показы за</div>
-
-								<div class="tabs">
-									<button data-content="#tab1_1" data-level="level1" class="active">Сегодня</button>
-									<button data-content="#tab1_2" data-level="level1">Вчера</button>
-									<button data-content="#tab1_3" data-level="level1">Неделю</button>
-									<button data-content="#tab1_4" data-level="level1">Месяц</button>
-									<button data-content="#tab1_5" data-level="level1">Квартал</button>
-									<button data-content="#tab1_6" data-level="level1">Год</button>
-								</div>
-							</div>
-
-
-							<div class="tab_content level1 active" id="tab1_1">
-								<div class="chart" id="chart1_1"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab1_2">
-								<div class="chart" id="chart1_2"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab1_3">
-								<div class="chart" id="chart1_3"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab1_4">
-								<div class="chart" id="chart1_4"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab1_5">
-								<div class="chart" id="chart1_5"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab1_6">
-								<div class="chart" id="chart1_6"></div>
-							</div>
-						</div>
-
-					</div>
-				</section>
-
-
-				<section class="block">
-					<div class="cont">
-
-						<div class="block_data tabs_container">
-							<div class="head">
-								<div class="block_title">Клики за</div>
-
-								<div class="tabs">
-									<button data-content="#tab2_1" data-level="level1" class="active">Сегодня</button>
-									<button data-content="#tab2_2" data-level="level1">Вчера</button>
-									<button data-content="#tab2_3" data-level="level1">Неделю</button>
-									<button data-content="#tab2_4" data-level="level1">Месяц</button>
-									<button data-content="#tab2_5" data-level="level1">Квартал</button>
-									<button data-content="#tab2_6" data-level="level1">Год</button>
-								</div>
-							</div>
-
-
-							<div class="tab_content level1 active" id="tab2_1">
-								<div class="chart" id="chart2_1"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab2_2">
-								<div class="chart" id="chart2_2"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab2_3">
-								<div class="chart" id="chart2_3"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab2_4">
-								<div class="chart" id="chart2_4"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab2_5">
-								<div class="chart" id="chart2_5"></div>
-							</div>
-
-							<div class="tab_content level1" id="tab2_6">
-								<div class="chart" id="chart2_6"></div>
-							</div>
-						</div>
-
-					</div>
-				</section>
-
-
-				<section class="block">
-					<div class="cont">
-
-						<div class="block_data">
-							<div class="empty">
-								<div class="icon">
-									<svg><use xlink:href="images/sprite.svg#ic_warning"></use></svg>
-								</div>
-
-								<div class="title">У вас пока нет<br> рекламных компаний</div>
-
-								<button class="add_btn btn modal_link" data-content="#add_company_modal">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
-									<span>Создать первую</span>
-								</button>
-							</div>
-						</div>
-
-					</div>
-				</section>
-
-
-				<section class="block">
-					<div class="cont">
-
-						<div class="block_data">
-							<div class="empty">
-								<div class="icon">
-									<svg><use xlink:href="images/sprite.svg#ic_filter"></use></svg>
-								</div>
-
-								<div class="title">В этом фильтре<br> ничего нет</div>
-
-								<button class="back_btn btn">
-									<svg class="icon"><use xlink:href="images/sprite.svg#ic_back"></use></svg>
-									<span>Вернуться назад</span>
-								</button>
-							</div>
-						</div>
-
-					</div>
-				</section>
+				
 			</div>
 
 
@@ -492,6 +257,14 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="modal-event"  id="callback_modal" style="display: none;">
+			<div class="event-modal_image">
+				<img src="images/chat.png" alt="">
+			</div>
+		</section>
+
 
 
 		<section class="modal" id="add_company_modal">
@@ -571,6 +344,8 @@
 				</form>
 			</div>
 		</section>
+
+
 
 
 		<!-- Подключение javascript файлов -->
