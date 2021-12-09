@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.companies.event table td.status span {
+    color: #001737;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-left: 0;
+    display: inline-block;
+}
+.companies.event table td span {
+    color: #001737;
+}
+.companies.event table td.action a {
+    border: 1px solid #dde2e8;
+}
+.companies.event table th {
+    padding: 0 12px 11px;
+}
+.companies.event table td.service {
+    width: 34%;
+}
+.fancybox-slide--html .fancybox-close-small {
+    color: #fff;
+    top: -48px;
+    right: -48px;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    transition: color .2s linear;
+    opacity: 1;
+}
+
+
+
+@media (max-width: 1023px) {
+    .companies.event table td {
+        width: 33.333%;
+    }
+    .companies.event table td.service {
+        width: 33.333%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .companies.event table td {
+        width: 50%;
+    }
+    .companies.event table td.service {
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 479px) {
+
+    .companies.event tr {
+        font-family: "Gilroy";
+        box-shadow: 0 3px 31px rgba(148, 155, 195, 0.15);
+        border-radius: 20px;
+        background-color: #ffffff;
+    }
+    .companies table td:before {
+        font-family: "Gilroy";
+        font-weight: 500;
+    }
+    .companies.event table tr {
+        background: #fff;
+        margin-top: 30px;
+    }
+    .companies.event table td {
+        border-bottom: none;
+    }
+    .companies.event table td span {
+        color: #85859c;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 16px;
+        background-color: #ebedf9;
+        margin-top: 7px;
+        display: inline-block;
+        font-family: "Gilroy";
+    }
+    .companies.event table td.service {
+        width: 100%;
+    }
+    .companies.event table td.date {
+        width: 53%;
+    }
+    .companies.event table td.status {
+        width: 38%;
+    }
+    .companies.event table td.name {
+        width: 100%;
+    }
+    .companies.event table td.service {
+        width: 100%;
+    }
+    .companies.event table td.action {
+        display: none;
+    }
+    .companies.event table td.action_mob {
+        display: block !important;
+        background: url(../images/chat_mob.png);
+        width: 100%;
+        padding: 33px 39px;
+    } 
+    .companies.event table td.action_mob {
+        display: block !important;
+        background: url(../images/chat_mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 33px 39px;  
+        border-radius: 16px;  
+        margin: 45px 20px 20px;
+    }
+    .companies.event table td.action_mob span a {
+        text-decoration: none;
+        display: block;
+        width: 203px;
+        height: 44px;
+        border-radius: 12px;
+        background-image: linear-gradient(225deg, #2084ff 0%, #0052d4 100%);
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 44px;
+        text-align: center;  
+        margin: 0 auto;  
+        font-family: "Gilroy";
+        font-weight: 600;
+    }
+    .companies.event table td.action_mob span {
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        background: none;
+    }
+    .event-modal_image img {
+        width: 100%;
+    }
+    .fancybox-slide--html .fancybox-close-small {
+        top: -34px;
+        right: -34px;
+    }
+    .companies.event table td.status span {
+        color: #85859c;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 16px;
+        background-color: #ebedf9;
+        margin-top: 9px;
+        display: inline-block;
+    }
+    .companies.event table td.action_mob {
+        position: relative;
+    }
+    .companies.event table td.action_mob:before {
+        color: #a7afb7;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        position: absolute;
+        top: -26px;
+        left: 0;
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+    }
+    .companies.event table td.service span {
+        padding: 3px 12px 3px 0;
+    }
+    .companies.event table td {
+        padding: 36px 20px 0;
+    }
+    .block.events .block_data {
+        padding: 30px;
+        border: none;
+        border-radius: 0px;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    .block.events .block_data > .head {
+        margin-bottom: 0;
+    }
+} 
