@@ -1,27 +1,17 @@
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Semibold.eot');
-    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
-        url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
-        url('../fonts/Gilroy-Semibold.woff') format('woff'),
-        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'), url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Semibold.woff2') format('woff2'), url('../fonts/Gilroy-Semibold.woff') format('woff'), url('../fonts/Gilroy-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Medium.eot');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-        url('../fonts/Gilroy-Medium.woff') format('woff'),
-        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Medium.woff2') format('woff2'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
-
 .companies.event table td.status span {
     color: #001737;
     font-size: 14px;
@@ -53,9 +43,6 @@
     transition: color .2s linear;
     opacity: 1;
 }
-
-
-
 @media (max-width: 1023px) {
     .companies.event table td {
         width: 33.333%;
@@ -64,8 +51,6 @@
         width: 33.333%;
     }
 }
-
-
 @media (max-width: 767px) {
     .companies.event table td {
         width: 50%;
@@ -74,11 +59,7 @@
         width: 50%;
     }
 }
-
-
-
 @media (max-width: 479px) {
-
     .companies.event tr {
         font-family: "Gilroy";
         box-shadow: 0 3px 31px rgba(148, 155, 195, 0.15);
@@ -130,15 +111,15 @@
         background: url(../images/chat_mob.png);
         width: 100%;
         padding: 33px 39px;
-    } 
+    }
     .companies.event table td.action_mob {
         display: block !important;
         background: url(../images/chat_mob.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        padding: 33px 39px;  
-        border-radius: 16px;  
+        padding: 33px 39px;
+        border-radius: 16px;
         margin: 45px 20px 20px;
     }
     .companies.event table td.action_mob span a {
@@ -152,8 +133,8 @@
         font-size: 14px;
         font-weight: 700;
         line-height: 44px;
-        text-align: center;  
-        margin: 0 auto;  
+        text-align: center;
+        margin: 0 auto;
         font-family: "Gilroy";
         font-weight: 600;
     }
@@ -212,7 +193,74 @@
         box-shadow: none;
         padding: 0;
     }
-    .block.events .block_data > .head {
+    .block.events .block_data>.head {
         margin-bottom: 0;
     }
-} 
+}
+/*perehvat 09.12.2021*/
+
+.captute {
+    margin-bottom: 50px;
+}
+.captute_head {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222222;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.captute_head span {
+    color: #8E9EAB;
+}
+.captute_list {
+    display: flex;
+    margin-left: -16px;
+    flex-wrap: wrap;
+}
+.captute_item {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    margin-left: 16px;
+    width: calc(100% / 5 - 16px);
+    padding: 15px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #B5BDC9;
+}
+.captute_name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #33A3FF;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: block;
+}
+
+@media (max-width: 1023px) {
+    .captute_item {
+        width: calc(100% / 3 - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .captute_item {
+        width: 100%;
+    }
+
+    .captute_head{
+        flex-direction: column;
+        font-size: 17px;
+        line-height: 19px;
+        margin-bottom: 5px;
+    }
+
+    .captute_head div{
+        margin-bottom: 10px;
+    }
+}
